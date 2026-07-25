@@ -109,6 +109,7 @@ the build is not yet code-signed.
 
 ## 🔗 Links
 
+- [Changelog](CHANGELOG.md)
 - [Product page](https://argildesign.com/products/argilcad)
 - [Pricing](https://argildesign.com/products/argilcad/pricing.html)
 - [Support](https://argildesign.com/support.html)

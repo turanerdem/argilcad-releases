@@ -112,6 +112,7 @@ yükleyicinin gerçek olduğunu teyit etmenizin tek yoludur.
 
 ## 🔗 Bağlantılar
 
+- [Değişiklik günlüğü](CHANGELOG.tr.md)
 - [Ürün sayfası](https://argildesign.com/tr/products/argilcad)
 - [Fiyatlandırma](https://argildesign.com/tr/products/argilcad/pricing.html)
 - [Destek](https://argildesign.com/tr/support.html)

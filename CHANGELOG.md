@@ -1,3 +1,9 @@
+<div align="right">
+
+🇹🇷 [Türkçe](CHANGELOG.tr.md)
+
+</div>
+
 # Changelog
 
 All notable changes to ArgilCAD will be documented in this file.
