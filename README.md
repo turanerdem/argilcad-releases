@@ -22,14 +22,14 @@ Generate precise, editable parametric 3D models from natural language. Real CAD,
 
 ## 📥 Download
 
-> **First release coming soon!** ⭐ Star or 👁 Watch this repository to get notified when ArgilCAD is available for download.
+All official releases are published on the [**Releases**](../../releases) page of this repository. The links below always point to the newest version.
 
-All official releases will be published on the [**Releases**](../../releases) page of this repository.
+| Platform | File | Download |
+|----------|------|----------|
+| macOS (Apple Silicon) | `ArgilCAD-macos.dmg` | [Latest](../../releases/latest/download/ArgilCAD-macos.dmg) |
+| Windows (64-bit) | `ArgilCAD-windows-setup.exe` | [Latest](../../releases/latest/download/ArgilCAD-windows-setup.exe) |
 
-| Platform | File |
-|----------|------|
-| macOS | `ArgilCAD-<version>.dmg` |
-| Windows | `ArgilCAD-<version>-Setup.exe` |
+⭐ Star or 👁 Watch this repository to get notified about new versions.
 
 Always download ArgilCAD from this repository or from [argildesign.com](https://argildesign.com/products/argilcad). Downloads from any other source are not official and may be unsafe.
 
@@ -38,22 +38,30 @@ Always download ArgilCAD from this repository or from [argildesign.com](https://
 | | macOS | Windows |
 |---|-------|---------|
 | OS version | macOS 11 Big Sur or later | Windows 10 / 11 (64-bit) |
-| Architecture | Apple Silicon & Intel | x64 |
+| Architecture | **Apple Silicon only** (M1, M2, M3, M4 …) | x64 |
 | Other | Internet connection required for AI features | Internet connection required for AI features |
 
-*Requirements may be refined before the first release.*
+> ⚠️ **Intel-based Macs are not supported yet.** ArgilCAD currently ships only
+> for Apple Silicon. On an Intel Mac the app will launch but the built-in CAD
+> engine cannot start, so model generation will not work. Intel support is
+> planned for a future release.
+>
+> Not sure which Mac you have?  → **Apple menu → About This Mac**. If *Chip*
+> says "Apple M1/M2/M3/M4", you're on Apple Silicon. If *Processor* says
+> "Intel", please wait for the Intel build.
 
 ## 🔧 Installation
 
-### macOS
+### macOS (Apple Silicon)
 
-1. Download the `.dmg` file from the [Releases](../../releases) page.
-2. Open the DMG and drag **ArgilCAD** into your **Applications** folder.
-3. Launch ArgilCAD from Applications. The app is signed and notarized by Apple, so it opens without warnings.
+1. Check that your Mac has an Apple Silicon chip (**Apple menu → About This Mac → Chip**). Intel Macs are not supported yet.
+2. Download `ArgilCAD-macos.dmg` from the [Releases](../../releases) page.
+3. Open the DMG and drag **ArgilCAD** into your **Applications** folder.
+4. Launch ArgilCAD from Applications. The app is signed and notarized by Apple, so it opens without warnings.
 
 ### Windows
 
-1. Download the `-Setup.exe` installer from the [Releases](../../releases) page.
+1. Download `ArgilCAD-windows-setup.exe` from the [Releases](../../releases) page.
 2. Run the installer and follow the steps.
 3. Launch ArgilCAD from the Start menu.
 
