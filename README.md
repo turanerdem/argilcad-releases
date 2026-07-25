@@ -62,10 +62,45 @@ Always download ArgilCAD from this repository or from [argildesign.com](https://
 ### Windows
 
 1. Download `ArgilCAD-windows-setup.exe` from the [Releases](../../releases) page.
-2. Run the installer and follow the steps.
-3. Launch ArgilCAD from the Start menu.
+2. Verify the download — see [Verifying your download](#-verifying-your-download) below.
+3. Run the installer and follow the steps.
+4. Launch ArgilCAD from the Start menu.
 
-> If Windows SmartScreen shows a notice for a newly published version, verify that the publisher is **Argil Design** before continuing.
+> ⚠️ **This build is not code-signed yet.** Windows SmartScreen will show
+> *"Windows protected your PC"* and list the publisher as **Unknown publisher**.
+> That is expected for an unsigned installer — it does not mean the file has been
+> tampered with. To continue, click **More info → Run anyway**.
+>
+> Because Windows cannot show you a publisher name to check, do these two things
+> instead: download the installer **only** from this repository or from
+> [argildesign.com](https://argildesign.com/products/argilcad), and verify its
+> SHA-256 checksum before running it. Code signing is planned for a future release.
+
+## 🔒 Verifying your download
+
+Every asset on the [Releases](../../releases) page shows a `sha256:` digest next to
+the file name. Compare it with the checksum of the file you downloaded — the two
+must match exactly.
+
+**Windows** (PowerShell, in the folder containing the download):
+
+```powershell
+Get-FileHash .\ArgilCAD-windows-setup.exe -Algorithm SHA256
+```
+
+**macOS** (Terminal):
+
+```bash
+shasum -a 256 ArgilCAD-macos.dmg
+```
+
+If the values differ, delete the file and download it again. Never run an
+installer whose checksum does not match.
+
+On macOS this is optional: the DMG is signed and notarized by Apple, so macOS
+verifies its integrity and origin for you before it opens. On Windows the
+checksum is currently your only way to confirm the installer is genuine, since
+the build is not yet code-signed.
 
 ## 🐛 Feedback & Support
 

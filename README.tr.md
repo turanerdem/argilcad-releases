@@ -63,10 +63,47 @@ ArgilCAD'i yalnızca bu depodan veya [argildesign.com](https://argildesign.com/t
 ### Windows
 
 1. [Releases](../../releases) sayfasından `ArgilCAD-windows-setup.exe` yükleyicisini indirin.
-2. Yükleyiciyi çalıştırın ve adımları izleyin.
-3. ArgilCAD'i Başlat menüsünden başlatın.
+2. İndirmeyi doğrulayın — aşağıdaki **İndirmenizi Doğrulama** bölümüne bakın.
+3. Yükleyiciyi çalıştırın ve adımları izleyin.
+4. ArgilCAD'i Başlat menüsünden başlatın.
 
-> Yeni yayınlanan bir sürüm için Windows SmartScreen bir bildirim gösterirse, devam etmeden önce yayıncının **Argil Design** olduğunu doğrulayın.
+> ⚠️ **Bu sürüm henüz kod imzalı değil.** Windows SmartScreen *"Windows kişisel
+> bilgisayarınızı korudu"* uyarısını gösterecek ve yayıncıyı **Bilinmeyen
+> yayıncı** olarak listeleyecektir. Bu, imzasız bir yükleyici için beklenen bir
+> durumdur — dosyanın değiştirildiği anlamına gelmez. Devam etmek için **Ek bilgi
+> → Yine de çalıştır**'a tıklayın.
+>
+> Windows size doğrulayabileceğiniz bir yayıncı adı gösteremediği için bunun
+> yerine şu ikisini yapın: yükleyiciyi **yalnızca** bu depodan veya
+> [argildesign.com](https://argildesign.com/tr/products/argilcad) adresinden
+> indirin ve çalıştırmadan önce SHA-256 sağlamasını doğrulayın. Kod imzalama
+> ilerleyen bir sürüm için planlanıyor.
+
+## 🔒 İndirmenizi Doğrulama
+
+[Releases](../../releases) sayfasındaki her dosyanın yanında bir `sha256:` özeti
+gösterilir. Bunu indirdiğiniz dosyanın sağlamasıyla karşılaştırın — ikisi birebir
+aynı olmalıdır.
+
+**Windows** (PowerShell, indirmenin bulunduğu klasörde):
+
+```powershell
+Get-FileHash .\ArgilCAD-windows-setup.exe -Algorithm SHA256
+```
+
+**macOS** (Terminal):
+
+```bash
+shasum -a 256 ArgilCAD-macos.dmg
+```
+
+Değerler farklıysa dosyayı silin ve yeniden indirin. Sağlaması tutmayan bir
+yükleyiciyi asla çalıştırmayın.
+
+macOS'ta bu adım isteğe bağlıdır: DMG, Apple tarafından imzalanmış ve notarize
+edilmiştir; macOS dosyayı açmadan önce bütünlüğünü ve kaynağını sizin adınıza
+doğrular. Windows'ta ise sürüm henüz kod imzalı olmadığından, sağlama toplamı
+yükleyicinin gerçek olduğunu teyit etmenizin tek yoludur.
 
 ## 🐛 Geri Bildirim ve Destek
 
