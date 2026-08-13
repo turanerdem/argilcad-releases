@@ -11,6 +11,89 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2026-08-13
+
+A stability release: ArgilCAD now starts and runs on setups where it previously
+crashed or refused to open, and the 3D camera behaves predictably again.
+
+### Added
+
+- Double-click anywhere on the model to centre the view on that point — the
+  fastest way to put the rotation pivot where you are working.
+- When the 3D viewer cannot run on a computer, ArgilCAD now explains why, tells
+  you what to change, and offers a **Copy diagnostics** button for support
+  instead of leaving an empty panel. The rest of the app keeps working.
+
+### Fixed
+
+- **The app no longer crashes on computers with an outdated graphics driver, in
+  a virtual machine, or over Remote Desktop.**
+- ArgilCAD no longer fails to start when it is installed for all users or in a
+  protected folder. Settings and projects are now kept in the standard per-user
+  location, and anything from an earlier version is moved there automatically —
+  nothing is lost.
+- On a computer where more than one person is signed in at the same time, each
+  account now works with its own models.
+- First launch on Windows is faster and more reliable: the app no longer reports
+  that it cannot reach its engine on a fresh install, only to work after
+  **Retry**.
+- On macOS, permission prompts for the Documents folder no longer prevent the
+  app from starting.
+- **Reset view** now frames the whole part, whatever its size.
+- Switching to the top or bottom view no longer leaves the model tilted with no
+  way to straighten it out.
+- Zoom now follows the size of your part: you can get close to a small feature
+  on a large plate, and a large part is no longer clipped when you zoom out.
+- The scroll wheel zooms toward the point under the cursor, so a view that was
+  panned away from the part finds its way back.
+- The viewer control hints are now one per line and no longer overlap the axis
+  indicator in a narrow window.
+- When a package with compiled components cannot be installed on macOS, the
+  message now says so clearly instead of failing silently.
+
+## [1.0.1] - 2026-08-07
+
+Direct modeling comes to ArgilCAD: shape a model with the mouse, and keep every
+bit of the Python behind it.
+
+> ⚠️ This was a required update — older versions can no longer generate models.
+
+### Added
+
+- **Direct modeling tools** — a new **Model** menu with mouse-driven
+  operations: fillet, chamfer, push/pull, hole, shell, draft, move, rotate,
+  mirror and linear / circular patterns. These are not a separate mode: each
+  tool writes real [Build123d](https://build123d.readthedocs.io) code into your
+  script, between markers that keep it re-editable. Export the `.py` and it
+  still runs.
+- **Sketch → extrude / revolve** — draw on any face of the model (rectangles,
+  circles, polygons and paths with snapping), then extrude the profile into a
+  solid or revolve it around an axis.
+- **Three ways to set a number** — drag the arrow handle standing on the picked
+  geometry, use the panel slider, or type the value. All three show a live
+  preview of the result before you commit.
+- **Export** — save your model as STL, STEP or GLB straight from the viewer.
+- **Keyboard shortcuts** across the app, with the full list under
+  **Help → Keyboard Shortcuts**.
+- A toolbar for the code editor.
+
+### Changed
+
+- Faster model generation — the CAD engine is now kept warm in the background
+  instead of starting from scratch on every build.
+- Clearer, localized error messages when a build fails.
+- The app tells you when the internet connection drops.
+- Model canvas UI improvements.
+
+### Fixed
+
+- The 3D viewer no longer stays blank on first launch.
+- Typing in text fields works again.
+- Sketch snapping points no longer drift on polygons and paths.
+- Cutting a sketch on a top surface works.
+- Code editor terminal error resolved.
+- STL files are named from the model's parameters.
+
 ## [1.0.0] - 2026-07-25
 
 The first public release of ArgilCAD.
