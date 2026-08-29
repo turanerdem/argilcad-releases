@@ -12,6 +12,44 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.3] - 2026-08-29
+
+Eskiz sürümü: konturunuzu çizgi, yay ve spline ile çizin, sonra dolu ya da içi
+boş duvar olarak çıkarın. Yanında daha ucuz model üretimi ve gözle görülür
+şekilde hızlanmış bir editör ve görüntüleyici.
+
+### Eklendi
+
+- **Yeni eskiz çizim araçları** — **Çizgi**, **Yay**, **Spline** ve **Ofset**;
+  kontur artık yalnızca dikdörtgen ve dairelerden kurulmak zorunda değil.
+- **Extrude için Duvar modu.** Eskiz artık yalnızca kontur ile ofseti arasındaki
+  bandı bırakabiliyor, böylece çıkardığınız hacim içi boş oluyor. Duvar
+  kalınlığını ve duvarın konturun içinde mi dışında mı kalacağını siz
+  belirliyorsunuz.
+- **Biten konturu yeniden çizmeden büyütüp küçültme.**
+- Kod editörü, kodda hata varken ücretli yapay zekâ düzenlemesini artık
+  başlatmıyor — aynı hatayla dönecek bir düzenlemeye kredi harcanmıyor.
+
+### Değiştirildi
+
+- **Model üretimi daha az kredi harcıyor.** Aynı proje üzerinde çalışırken
+  istem mümkün olduğunca önbellekten kullanılıyor ve bu tasarruf doğrudan
+  faturalanan krediye yansıyor.
+- **Uygulama en yavaş olduğu yerlerde hızlandı.** Proje ve üretim geçmişi büyük
+  projelerde beklemeden açılıyor, uzun dosyalarda kod editöründe yazarken
+  takılma kalmadı, 3B görüntüleyici çalışırken çok daha az yeniden çiziliyor.
+
+### Düzeltildi
+
+- Keşfet bölümünden ve üretim panelinden model indirmenin başarısız olması
+  giderildi.
+- Modele uygulanan her özellikte bellek kullanımı artıyordu; her düzenleme artık
+  yerini aldığı geometriyi serbest bırakıyor.
+- Görünüm değiştirdikten sonra 3B görünümün bir bölümünün temizlenmeden kalmasına
+  yol açan çizim hatası giderildi.
+- Uzun süren bir işlem — örneğin paket kurulumu — sürerken motor artık yanıt
+  vermeyi kesmiyor: model indirmeleri ve durum kontrolleri anında geçiyor.
+
 ## [1.0.2] - 2026-08-13
 
 Kararlılık sürümü: ArgilCAD artık daha önce çöktüğü veya hiç açılmadığı

@@ -11,6 +11,45 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2026-08-29
+
+A sketching release: draw a profile with lines, arcs and splines and extrude it
+solid or as a hollow wall — alongside cheaper generations and a noticeably
+faster editor and viewer.
+
+### Added
+
+- **New sketch drawing tools** — **Line**, **Arc**, **Spline** and **Offset**,
+  so a profile no longer has to be built from rectangles and circles alone.
+- **Wall mode for extrusions.** A sketch can now keep only the band between the
+  outline and its offset, so what you extrude comes out hollow. Set the wall
+  thickness, and whether the wall sits inside or outside the outline you drew.
+- **Grow or shrink the finished outline** before extruding, without redrawing
+  it.
+- The code editor now holds back a paid AI edit while the code still has errors,
+  instead of spending a credit on an edit that would fail the same way.
+
+### Changed
+
+- **Model generation costs fewer credits.** Work on the same project reuses a
+  cached prompt where it can, and the saving goes straight to what you are
+  charged.
+- **The app is faster where it used to be slowest.** Project and generation
+  history open without a pause on large projects, typing in the code editor no
+  longer stutters on long files, and the 3D viewer redraws far less while you
+  work.
+
+### Fixed
+
+- Downloading a model from Explore and from the generation panel failed.
+- Memory kept growing with every feature applied to a model; each edit now
+  releases the geometry it replaces.
+- A rendering glitch that could leave part of the 3D view uncleared after
+  switching views.
+- The engine no longer stops answering while a long operation — installing a
+  package, for instance — is running: model downloads and status checks go
+  through immediately.
+
 ## [1.0.2] - 2026-08-13
 
 A stability release: ArgilCAD now starts and runs on setups where it previously
