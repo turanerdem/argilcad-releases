@@ -11,6 +11,23 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2026-08-29
+
+A fix-only release, and a required one: in the installed app, downloading a
+model, exporting it as a file or a drawing, and deleting it all failed while
+everything else looked perfectly healthy.
+
+### Fixed
+
+- **Model downloads, drawing and file exports, and model deletion failed in the
+  installed app.** Those requests were sent to a fixed port while the built-in
+  engine had started on a different one, so they were refused. The app still
+  reported a healthy engine and generated models normally, which made the
+  failure look random rather than pointing at its cause. The development setup,
+  where the port never changes, was never affected.
+- When a request to the engine does fail, the message now names the address that
+  was tried instead of reporting a bare connection error.
+
 ## [1.0.3] - 2026-08-29
 
 A sketching release: draw a profile with lines, arcs and splines and extrude it

@@ -12,6 +12,24 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.4] - 2026-08-29
+
+Yalnızca düzeltme içeren, zorunlu bir sürüm: kurulu uygulamada model indirme,
+modeli dosya ya da teknik resim olarak dışa aktarma ve model silme, geri kalan
+her şey sapasağlam görünürken başarısız oluyordu.
+
+### Düzeltildi
+
+- **Kurulu uygulamada model indirme, teknik resim ve dosya dışa aktarma ile
+  model silme başarısız oluyordu.** Bu istekler sabit bir bağlantı noktasına
+  gidiyordu; oysa gömülü motor her açılışta başka bir bağlantı noktasında
+  başlıyor, bu yüzden bağlantı reddediliyordu. Uygulama motoru yine de sağlıklı
+  gösterip modelleri sorunsuz ürettiğinden, hata nedenini işaret etmek yerine
+  rastgeleymiş gibi görünüyordu. Bağlantı noktasının hiç değişmediği geliştirme
+  kurulumu bundan etkilenmiyordu.
+- Motora giden bir istek başarısız olduğunda mesaj artık denenen adresi de
+  yazıyor; salt bir bağlantı hatası bırakmıyor.
+
 ## [1.0.3] - 2026-08-29
 
 Eskiz sürümü: konturunuzu çizgi, yay ve spline ile çizin, sonra dolu ya da içi
