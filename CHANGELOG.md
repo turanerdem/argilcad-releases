@@ -11,6 +11,55 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.5] - 2026-09-14
+
+ArgilCAD now runs in your browser too, and AI generation moves to the Starter
+and Pro plans. Everything that runs on your own machine — the code editor, the
+modelling tools, examples, exports and drawings — stays free, with no account
+needed.
+
+### Added
+
+- **ArgilCAD in the browser** at
+  [argildesign.com/argilcad](https://argildesign.com/argilcad/): the same app,
+  with models built on your own device.
+- **Project backups.** When you are signed in, your projects' code is kept in
+  your account and opens on your other devices, the browser included. Turn it
+  off in Profile; deleting a project deletes its backup.
+- **Examples in the prompt box.** Without a plan, three ready-made examples
+  (Spur Gear, Vase, Electronics Enclosure) build on your machine at no cost,
+  beside a way to prompt your own AI and paste the code back.
+- **Generate leads to what you need.** Pressing Generate without a plan opens
+  sign-up, then the plans, and your prompt stays where it was. Once a plan is
+  active, generating is one tap away.
+- **A heads-up before Starter credits run out**, at 80% and 100% of the month's
+  allowance, with an in-place upgrade to Pro.
+- **The prompt box folds away** to a small pill (Esc in an empty box, or
+  View › Prompt box); press **P** to bring it back.
+
+### Changed
+
+- **AI generation takes a Starter or Pro plan.** The free monthly and trial
+  credits have ended; credits you already have stay usable until they are
+  spent.
+- **No account needed to start.** The app opens without creating one; sign up
+  when you want a plan or your projects in your account.
+- **Usage analytics only with your permission.** Nothing is sent until you
+  answer the prompt on first launch, and you can change your answer in
+  Settings.
+- The CAD engine's versions are pinned, so the desktop app and the browser
+  build identical models.
+- The Privacy Policy and Terms of Service were updated (effective September 14,
+  2026).
+
+### Fixed
+
+- The first modelling tool applied to an unchanged example no longer fails
+  with a `NameError`.
+- Exporting or drawing a model reopened from history works again after the
+  built-in engine has restarted.
+- Small or short windows no longer cut off the top bar, panels and dialogs.
+
 ## [1.0.4] - 2026-08-29
 
 A fix-only release, and a required one: in the installed app, downloading a

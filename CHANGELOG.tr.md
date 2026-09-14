@@ -12,6 +12,55 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.5] - 2026-09-14
+
+ArgilCAD artık tarayıcıda da çalışıyor ve yapay zekâ ile üretim Starter ve Pro
+planlarına geçiyor. Kendi bilgisayarınızda çalışan her şey — kod editörü,
+modelleme araçları, örnekler, dışa aktarma ve teknik resim — hesap açmadan
+ücretsiz kalıyor.
+
+### Eklendi
+
+- **Tarayıcıda ArgilCAD**:
+  [argildesign.com/argilcad](https://argildesign.com/argilcad/) adresinde aynı
+  uygulama; modeller kendi cihazınızda kurulur.
+- **Proje yedekleri.** Giriş yaptığınızda projelerinizin kodu hesabınızda da
+  saklanır ve tarayıcı dahil diğer cihazlarınızda açılır. Profil'den
+  kapatabilirsiniz; bir projeyi silmek yedeğini de siler.
+- **Prompt kutusunda örnekler.** Planınız yokken üç hazır örnek (düz dişli,
+  vazo, elektronik kutusu) bilgisayarınızda ücretsiz kurulur; yanında kendi
+  yapay zekânıza prompt yazıp kodu geri yapıştırma yolu var.
+- **Üret, ihtiyacınız olana götürür.** Planınız yokken Üret'e basınca önce
+  kayıt, sonra planlar açılır; prompt'unuz yerinde kalır. Plan etkinleşince
+  üretim tek dokunuş uzaktadır.
+- **Starter kredisi bitmeden haber**: ayın kredisinin %80'i ve tamamı
+  harcandığında, Pro'ya yerinde yükseltme önerisiyle.
+- **Katlanabilir prompt kutusu.** Boş kutuda Esc ya da Görünüm › Prompt kutusu
+  ile küçük bir düğmeye iner; **P** ile geri gelir.
+
+### Değiştirildi
+
+- **Yapay zekâ ile üretim Starter ya da Pro planı gerektiriyor.** Ücretsiz aylık
+  ve deneme kredileri sona erdi; elinizdeki krediler bitene kadar
+  kullanılabilir.
+- **Başlamak için hesap gerekmiyor.** Uygulama hesap açmadan başlar; plan almak
+  ya da projelerinizi hesabınızda tutmak istediğinizde kaydolursunuz.
+- **Kullanım analizi yalnızca izninizle.** İlk açılıştaki soruya cevap
+  vermeden hiçbir şey gönderilmez; cevabınızı Ayarlar'dan değiştirebilirsiniz.
+- CAD motorunun sürümleri sabitlendi; masaüstü uygulaması ve tarayıcı aynı
+  modelleri üretir.
+- Gizlilik Politikası ve Kullanım Koşulları güncellendi (yürürlük: 14 Eylül
+  2026).
+
+### Düzeltildi
+
+- Değiştirilmemiş bir örneğe uygulanan ilk modelleme aracı artık `NameError`
+  ile başarısız olmuyor.
+- Geçmişten yeniden açılan bir modelin dışa aktarımı ve teknik resmi, gömülü
+  motor yeniden başladıktan sonra da çalışıyor.
+- Küçük ya da kısa pencerelerde üst çubuk, paneller ve pencereler artık
+  kesilmiyor.
+
 ## [1.0.4] - 2026-08-29
 
 Yalnızca düzeltme içeren, zorunlu bir sürüm: kurulu uygulamada model indirme,
