@@ -11,6 +11,55 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.6] - 2026-09-21
+
+ArgilCAD now opens on phones and tablets, showing the models you keep in your
+account. Building, editing and generating stay on a computer, where the CAD
+engine runs.
+
+### Added
+
+- **ArgilCAD on phones and tablets.** Open
+  [argildesign.com/argilcad](https://argildesign.com/argilcad/) on a handheld
+  and it shows your models, with a bottom bar for moving between the code and
+  the model. Editing and new models stay on a computer.
+- **Models on your devices** (Starter and Pro). Mark a project and its
+  finished model is kept in your account, so your phone and tablet can show
+  it — 2 models on Starter, 10 on Pro, and you choose which ones, month to
+  month.
+- **Your work comes back.** Project sync now reads your account as well as
+  writing to it: open a project and it shows the version you last worked on
+  elsewhere. Edited in two places, you are asked which one stands — nothing is
+  overwritten behind your back.
+- **The viewer follows the editor.** Code arriving from another device is run
+  where there is an engine to run it, so the model on screen matches the code
+  beside it.
+- **Examples on a handheld.** Explore's examples come ready-built, so a phone
+  can open them with no CAD engine of its own.
+
+### Changed
+
+- The top bar shows how many of your model slots are in use, with the month's
+  remaining allowance in its tooltip.
+- Model sync and project backup are named apart now: the backup keeps your
+  projects' code, sync keeps their models.
+- The local CAD backend no longer draws itself with a cloud icon — it is a
+  process on your own machine.
+
+### Fixed
+
+- Opening a synced project on a phone no longer hangs the app.
+- A project built by writing code and pressing Run is now found by sync. It
+  used to answer "run this project once first" however many times you had run
+  it.
+- A failed rebuild no longer erases the model that had just been downloaded.
+- A synced model that becomes available after a project opens is now fetched,
+  instead of leaving the viewer empty.
+- Synced models download in the browser at all now — the storage bucket had no
+  CORS configuration, so every fetch was refused.
+- Phones and tablets can reach the web app from the marketing site, instead of
+  the link being handed to the share sheet.
+
 ## [1.0.5] - 2026-09-14
 
 ArgilCAD now runs in your browser too, and AI generation moves to the Starter

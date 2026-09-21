@@ -12,6 +12,56 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.6] - 2026-09-21
+
+ArgilCAD artık telefon ve tablette de açılıyor ve hesabınızda tuttuğunuz
+modelleri gösteriyor. Üretmek, düzenlemek ve modellemek bilgisayarda kalıyor;
+CAD motoru orada çalışıyor.
+
+### Eklendi
+
+- **Telefon ve tablette ArgilCAD.**
+  [argildesign.com/argilcad](https://argildesign.com/argilcad/) adresini bir
+  telefon ya da tablette açtığınızda modellerinizi gösteriyor; alt çubuk kod
+  ile model arasında geçiş sağlıyor. Düzenleme ve yeni model bilgisayarda
+  kalıyor.
+- **Cihazlarındaki modeller** (Starter ve Pro). Bir projeyi
+  işaretlediğinizde bitmiş modeli hesabınızda tutuluyor, böylece telefonunuz
+  ve tabletiniz onu gösterebiliyor — Starter'da 2, Pro'da 10 model, hangileri
+  olduğunu her ay siz seçiyorsunuz.
+- **Yaptığınız iş geri geliyor.** Proje eşitleme artık hesabınıza yalnızca
+  yazmıyor, oradan okuyor da: bir projeyi açtığınızda başka bir cihazda en son
+  çalıştığınız sürümü gösteriyor. İki yerde düzenlendiyse hangisinin geçerli
+  olacağını size soruyor — arkanızdan hiçbir şeyin üzerine yazılmıyor.
+- **Görüntüleyici editörü takip ediyor.** Başka bir cihazdan gelen kod,
+  çalıştıracak motorun bulunduğu yerde çalıştırılıyor; böylece ekrandaki model
+  yanındaki kodla uyuşuyor.
+- **Telefon ve tablette örnekler.** Keşfet örnekleri hazır kurulmuş geliyor,
+  bu yüzden bir telefon kendi CAD motoru olmadan onları açabiliyor.
+
+### Değiştirildi
+
+- Üst çubuk, model kontenjanlarınızın kaçının kullanıldığını gösteriyor; ayın
+  kalan hakkı ipucunda yazıyor.
+- Model eşitleme ile proje yedeklemesi artık ayrı adlandırılıyor: yedekleme
+  projelerinizin kodunu, eşitleme ise modellerini tutuyor.
+- Yerel CAD arka ucu kendini artık bulut simgesiyle göstermiyor — o, kendi
+  makinenizde çalışan bir süreç.
+
+### Düzeltildi
+
+- Eşitlenmiş bir projeyi telefonda açmak uygulamayı artık dondurmuyor.
+- Kod yazıp Çalıştır'a basarak kurduğunuz bir proje artık eşitleme tarafından
+  bulunuyor. Eskiden, projeyi kaç kez çalıştırmış olursanız olun "bu projeyi
+  bir kez çalıştırın" yanıtını veriyordu.
+- Başarısız bir yeniden kurma, az önce indirilmiş modeli artık silmiyor.
+- Bir proje açıldıktan sonra erişilebilir hâle gelen eşitlenmiş model artık
+  indiriliyor; görüntüleyici boş kalmıyor.
+- Eşitlenmiş modeller tarayıcıda artık inebiliyor — depolama kovasında CORS
+  yapılandırması yoktu, bu yüzden her indirme reddediliyordu.
+- Telefon ve tabletler web uygulamasına tanıtım sitesinden ulaşabiliyor; bağlantı
+  artık paylaşım menüsüne yönlendirilmiyor.
+
 ## [1.0.5] - 2026-09-14
 
 ArgilCAD artık tarayıcıda da çalışıyor ve yapay zekâ ile üretim Starter ve Pro
