@@ -12,6 +12,59 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.7] - 2026-09-29
+
+Yeni Stüdyo modu modelinizi giydiriyor, render alıyor ve hareket ettiriyor;
+birden çok parçadan oluşan modeller artık parça parça düzenlenebiliyor.
+
+### Eklendi
+
+- **Stüdyo modu.** Çalışma Alanı ve Keşfet'in yanında yer alıyor ve
+  görüntüleyicinin araç çubuğunda kendi düğmeleri var: Malzeme, 3D baskı,
+  Hareket, Fotoğraf ve Video.
+- **Malzeme ve ışık.** Her parçaya kendi malzemesini ve rengini verin.
+  Görünüm projeyle birlikte kaydediliyor ve yedeğiyle birlikte taşınıyor.
+- **3D baskı önizlemesi.** Modelinizdeki katman çizgilerini, gerçek ölçüdeki
+  bir baskı tablasının üstünde görün.
+- **Renkli 3MF.** Giydirilmiş bir projenin 3MF dışa aktarımı, her parçanın
+  rengini dilimleyicinize taşıyor.
+- **Fotoğraf ve render.** Görünümün PNG anlık görüntüsünü kaydedin. Starter
+  ve Pro'da stüdyo ışığı (HDRI) ve path-traced render da var: Starter'da 2K'ya,
+  Pro'da 4K'ya kadar.
+- **Hareket.** Bir montajı patlatın ve yeniden birleştirin. Menteşe, kızak ve
+  dişli dizileri modelin geometrisinden öneriliyor; hareketli parçaları
+  doğrudan model üzerinde sürüklüyorsunuz. Hareket ederken birbirine çarpan
+  parçalar kırmızıyla gösteriliyor.
+- **Video.** Hareketi MP4 olarak kaydedin: ücretsiz planda küçük bir ArgilCAD
+  işaretiyle 720p, Starter'da 1080p, Pro'da 4K.
+- **Çok parçalı modeller.** Yeni Parçalar gezgini her parçayı, altında
+  özellikleriyle birlikte listeliyor. Bir parçayı gizleyin, yalnız bırakın ya
+  da vurgulayın; yeniden adlandırın, birleştirin ya da kaldırın; tek bir
+  parçayı dışa aktarın ya da teknik resmini çıkarın; bir çizimi yeni parça
+  olarak başlatın. Modelleme araçları seçtiğiniz parçada çalışıyor ve bir
+  parça, siz yeniden adlandırana kadar numarasını koruyor.
+- **Parçaları ve hareketi bilen yapay zekâ.** Menteşeli bir kapak, bir dişli
+  çifti ya da bir çekmece isteyin; üretilen model, Stüdyo'nun hareket
+  ettirebileceği ayrı parçalar olarak geliyor.
+
+### Değiştirildi
+
+- **Bir yüzeyde çizim.** Düzlem, tıklamadan önce ızgarasını gösteriyor;
+  imleci mesafeleriyle birlikte bir nokta takip ediyor; ızgara yüzeyin
+  kenarları boyunca uzanıyor ve bir sonraki noktanın bir kenara uzaklığını
+  yazarak girebiliyorsunuz.
+- Kod editörünün satır numaraları ve zaman çizelgesinin satırları dar
+  panellere taşmadan sığıyor.
+- Panel ayırıcıları, sürüklenebilir oldukları anlaşılsın diye bir tutamak
+  gösteriyor.
+
+### Düzeltildi
+
+- Modeli Temizle artık görüntüleyiciyi boşaltıyor ve sonraki model yeni bir
+  model gibi çerçeveleniyor.
+- Projeler arasında geçiş, önceki projenin seçimini, ölçümlerini, araçlarını
+  ya da adım planını artık bir sonrakine taşımıyor.
+
 ## [1.0.6] - 2026-09-21
 
 ArgilCAD artık telefon ve tablette de açılıyor ve hesabınızda tuttuğunuz

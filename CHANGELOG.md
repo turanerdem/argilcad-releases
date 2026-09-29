@@ -11,6 +11,55 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.7] - 2026-09-29
+
+A new Studio mode dresses your model, renders it and sets it in motion, and
+models made of several parts can now be worked on part by part.
+
+### Added
+
+- **Studio mode**, beside Workspace and Explore, with its own buttons in the
+  viewer's toolbar: Material, 3D print, Motion, Photo and Video.
+- **Materials and lighting.** Give each part its own material and colour. The
+  look is saved with the project and travels with its backup.
+- **3D print preview.** See layer lines on your model, on a build plate at
+  real scale.
+- **Coloured 3MF.** Once a project is dressed, its 3MF export carries each
+  part's colour to your slicer.
+- **Photos and renders.** Save a PNG snapshot of the view. Starter and Pro
+  add studio lighting (HDRI) and a path-traced render — up to 2K on Starter
+  and 4K on Pro.
+- **Motion.** Explode an assembly and put it back together. Hinges, sliders
+  and gear trains are suggested from the model's geometry, and you drag the
+  moving parts on the model itself. Parts that run into each other while they
+  move are shown in red.
+- **Video.** Record the motion as an MP4: 720p with a small ArgilCAD mark on
+  the free plan, 1080p on Starter, 4K on Pro.
+- **Models with several parts.** A new Parts explorer lists each part, with
+  its features under it. Hide, isolate or highlight a part; rename, join or
+  remove one; export or draw a single part; start a sketch as a new part.
+  The modelling tools work on the part you picked, and a part keeps its
+  number until you rename it.
+- **AI that knows about parts and motion.** Ask for a hinged lid, a gear pair
+  or a drawer, and the generated model comes as separate parts that Studio
+  can set in motion.
+
+### Changed
+
+- **Sketching on a face.** The plane previews its grid before you click, a
+  dot follows the pointer with its distances, the grid runs along the face's
+  edges, and you can type the next point's distance to an edge.
+- The code editor's line numbers and the timeline's rows fit narrow panes
+  without overflowing.
+- Panel dividers show a grip, so they read as something to drag.
+
+### Fixed
+
+- Clear Model now empties the viewer, and the next model is framed as a new
+  one.
+- Switching projects no longer carries the previous project's selection,
+  measurements, tools or step plan into the next one.
+
 ## [1.0.6] - 2026-09-21
 
 ArgilCAD now opens on phones and tablets, showing the models you keep in your
