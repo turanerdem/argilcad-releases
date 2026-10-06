@@ -11,6 +11,29 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.8] - 2026-10-06
+
+Bring your own AI assistant to ArgilCAD.
+
+### Added
+
+- **AI assistants (Starter and Pro).** Claude Desktop, Claude Code, Codex,
+  Gemini CLI, Cursor, VS Code and other MCP clients can now design parts in
+  ArgilCAD on your own AI subscription. Your assistant builds the model in
+  your project, looks at it, fixes what is off and exports STEP, STL or 3MF.
+  Every step lands in your timeline, where you can undo it, and work done
+  this way uses no ArgilCAD credits.
+- **AI assistant button** in the top bar: one click turns it on, and it turns
+  green once your AI client is connected. Settings → AI assistants shows how
+  to set up each client, and an illustrated guide is at
+  [argildesign.com/products/argilcad/connect.html](https://argildesign.com/products/argilcad/connect.html).
+- Your assistant opens or creates a project by itself when none is open.
+
+### Notes
+
+- In the browser, the AI assistant connects from every major browser except
+  Safari. In Safari, use the desktop app.
+
 ## [1.0.7] - 2026-09-29
 
 A new Studio mode dresses your model, renders it and sets it in motion, and

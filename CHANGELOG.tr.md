@@ -12,6 +12,29 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.8] - 2026-10-06
+
+Kendi AI asistanınızı ArgilCAD'e bağlayın.
+
+### Eklendi
+
+- **AI asistanları (Starter ve Pro).** Claude Desktop, Claude Code, Codex,
+  Gemini CLI, Cursor, VS Code ve diğer MCP istemcileri artık kendi AI
+  aboneliğinizle ArgilCAD'de parça tasarlayabiliyor. Asistanınız modeli
+  projenizde hazırlar, nasıl göründüğüne bakar, eksikleri düzeltir ve STEP,
+  STL ya da 3MF olarak dışa aktarır. Her adım zaman çizelgenize düşer ve geri
+  alınabilir; bu yolla yapılan işler ArgilCAD kredisi harcamaz.
+- Üst çubukta **AI asistanı düğmesi**: tek tıkla açılır, AI istemciniz
+  bağlanınca yeşile döner. Ayarlar → AI asistanları her istemcinin nasıl
+  kurulacağını gösterir; görselli rehber
+  [argildesign.com/tr/products/argilcad/connect.html](https://argildesign.com/tr/products/argilcad/connect.html) adresinde.
+- Açık proje yoksa asistanınız projeyi kendisi açar ya da oluşturur.
+
+### Notlar
+
+- Tarayıcıda AI asistanı, Safari dışındaki tüm yaygın tarayıcılardan
+  bağlanır. Safari'de masaüstü uygulamasını kullanın.
+
 ## [1.0.7] - 2026-09-29
 
 Yeni Stüdyo modu modelinizi giydiriyor, render alıyor ve hareket ettiriyor;
