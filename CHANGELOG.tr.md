@@ -12,6 +12,57 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.9] - 2026-10-15
+
+Modelinizi slicer'ınıza gönderin, AI ile sohbetinizi görün ve hesabınız
+olmasa da işiniz yedeklensin.
+
+### Eklendi
+
+- **3D baskı → slicer'ınız.** Stüdyo'nun 3D baskı bölümü modeli
+  yazıcınızın tablasına yerleştirir (otomatik yönlendirme ya da seçtiğiniz
+  yüz; birden çok parça birlikte ya da yan yana) ve hazır bir 3MF'i Bambu
+  Studio, OrcaSlicer, Creality Print veya PrusaSlicer'da, her parça kendi
+  filamentinde olacak şekilde açar. Slicer'ınız kendi yazıcı, filament ve
+  kalite profillerini korur. Tarayıcıda dosya indirilir.
+- İstem kutusunda **sohbet geçmişi**: projedeki her istem ve sonucu; o
+  sürüme dönme, kodunu görme ya da istemi yeniden kullanma düğmeleriyle.
+- **Bak ve düzelt** (isteğe bağlı, istem kutusunda): AI modeli kurduktan
+  sonra üç yönden bakar ve bulduklarını en fazla iki turda düzeltir. Daha iyi
+  modeller, yaklaşık 3–5 kat kredi karşılığında.
+- **Misafir yedekleri.** Hesabınız yokken de projeleriniz artık bu cihazdaki
+  misafir oturumunda yedeklenir (en fazla 2). Kayıt olduğunuzda korunur; var
+  olan bir hesaba giriş yaptığınızda o hesaba taşınır. 90 gün kullanılmayan
+  misafir oturumu silinir.
+- AI asistanları: yeni *ArgilCAD'de göster* aracı uygulamayı öne getirir,
+  *baskıya hazırla* baskı yerleşimini asistanınıza verir.
+
+### Değişti
+
+- Yeni AI modelleri: Claude Haiku 5.5 (varsayılan), Sonnet 5.5 ve Opus 5.5
+  (Pro), GPT-6.1 Sol ve GPT-6 Luna. GPT-5.5 artık sunulmuyor; onu
+  seçtiyseniz başka bir model seçin.
+- İstemden model, gerçek ürünün biçimine ve işlevine daha yakın sonuç
+  veriyor; cıvata, rulman ve dişliler geçerli ölçülerle kuruluyor.
+- AI asistanları bitirmeden önce kendi modellerine bakıp düzeltiyor; ekran
+  görüntüleri ArgilCAD başka pencerelerin arkasındayken ya da simge
+  durumundayken de çalışıyor.
+
+### Düzeltildi
+
+- Windows: WebView2 Runtime olmayan bir bilgisayar artık boş bir 3D görünüm
+  yerine bunu söylüyor ve indirme düğmesi sunuyor; kurulum programı
+  runtime'ı kuramazsa uyarıyor.
+- Windows: bozuk bir sistem fontu artık modelleme motorunun başlamasını
+  engellemiyor.
+- Intel Mac'te genel bir kurulum hatası yerine masaüstü uygulamasının Apple
+  Silicon gerektirdiği söyleniyor ve tarayıcı sürümü öneriliyor.
+- 2000 karakterden uzun bir açıklama (değişiklik için 600) kredi
+  harcanmadan, açık bir mesajla reddediliyor.
+- Bir modelleme aracı çalışırken iptal edildiğinde oluşan hata artık
+  gösteriliyor.
+- 3D görünümde daha temiz kenarlar.
+
 ## [1.0.8] - 2026-10-06
 
 Kendi AI asistanınızı ArgilCAD'e bağlayın.
@@ -50,7 +101,7 @@ birden çok parçadan oluşan modeller artık parça parça düzenlenebiliyor.
 - **3D baskı önizlemesi.** Modelinizdeki katman çizgilerini, gerçek ölçüdeki
   bir baskı tablasının üstünde görün.
 - **Renkli 3MF.** Giydirilmiş bir projenin 3MF dışa aktarımı, her parçanın
-  rengini dilimleyicinize taşıyor.
+  rengini slicer'ınıza taşıyor.
 - **Fotoğraf ve render.** Görünümün PNG anlık görüntüsünü kaydedin. Starter
   ve Pro'da stüdyo ışığı (HDRI) ve path-traced render da var: Starter'da 2K'ya,
   Pro'da 4K'ya kadar.

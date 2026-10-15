@@ -11,6 +11,57 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.9] - 2026-10-15
+
+Send your model to your slicer, see your conversation with the AI, and keep
+your work backed up even without an account.
+
+### Added
+
+- **3D print → your slicer.** Studio's 3D print section lays the model on
+  your printer's bed (automatic orientation, or the face you pick; several
+  parts together or side by side) and opens a ready 3MF in Bambu Studio,
+  OrcaSlicer, Creality Print or PrusaSlicer, each part on its own filament.
+  Your slicer keeps its own printer, filament and quality profiles. In the
+  browser the file is downloaded.
+- **Conversation history** in the prompt box: every prompt in the project
+  and what came of it, with a button to go back to that version, view its
+  code or reuse the prompt.
+- **Look & fix** (optional, in the prompt box): after building the model the
+  AI looks at it from three sides and fixes what it finds, up to two rounds.
+  Better models, at about 3–5× the credits.
+- **Guest backups.** Without an account your projects are now backed up too
+  (up to 2), in a guest session on this device. Registering keeps them;
+  signing in to an existing account moves them into it. A guest session not
+  used for 90 days is deleted.
+- AI assistants: a new *show in ArgilCAD* tool brings the app to the front,
+  and *prepare print* hands the print layout to your assistant.
+
+### Changed
+
+- New AI models: Claude Haiku 5.5 (default), Sonnet 5.5 and Opus 5.5 (Pro),
+  GPT-6.1 Sol and GPT-6 Luna. GPT-5.5 is no longer offered; if you had
+  picked it, choose another model.
+- Prompt-to-model now follows the real product's form and function more
+  closely, and fasteners, bearings and gears are built with valid sizes.
+- AI assistants look at their own model and fix it before finishing, and
+  their screenshots work while ArgilCAD is behind other windows or
+  minimised.
+
+### Fixed
+
+- Windows: a computer without the WebView2 Runtime now says so, with a
+  download button, instead of an empty 3D view; the installer warns when it
+  cannot install the runtime.
+- Windows: a damaged system font no longer stops the modelling engine from
+  starting.
+- An Intel Mac now says the desktop app needs Apple Silicon and offers the
+  browser version, instead of a generic setup error.
+- A description over 2000 characters (600 for a change) is refused with a
+  clear message before any credit is spent.
+- An error after cancelling a modelling tool mid-run no longer goes unshown.
+- Clearer edges in the 3D view.
+
 ## [1.0.8] - 2026-10-06
 
 Bring your own AI assistant to ArgilCAD.
