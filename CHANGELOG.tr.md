@@ -12,6 +12,61 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.10] - 2026-10-22
+
+Gerçek malzemeler, ölçüm aracı ve baskınızı bölen, kontrol eden ve
+anlatan bir 3D baskı aktarımı.
+
+### Eklendi
+
+- **Malzeme kütüphanesi.** Stüdyo'da 48 malzeme — metaller, plastikler ve
+  filamentler, ahşap, cam, kauçuk ve daha fazlası — her biri kendi renk
+  paletiyle (filament renkleri, RAL, eloksal, ağaç türleri) ve gerçek yüzey
+  desenleriyle. Arama, son kullanılanlar, mevcut ışıkta çizilen önizlemeler
+  ve ince ayarlar.
+- **Ölçüm.** Çalışma alanında ve Stüdyo'da tek bir akıllı araç: okumak için
+  bir kenara, daireye, yüze ya da köşeye gelin; ikisini seçince aralarındaki
+  mesafeyi, boşluğu, merkezden merkeze uzaklığı ya da açıyı alın ve ölçüyü
+  istediğiniz yere sabitleyin. Sabitlenen ölçüler parçalarıyla birlikte
+  hareket eder; fotoğraf ve videolarda gösterilebilir.
+- **Koddan renk, malzeme, eklem ve animasyon.** Bir model kendi görünüşünü ve
+  hareketini taşıyabilir — AI artık uygun olduğunda bunları kendiliğinden
+  ekler (Ayarlar'dan kapatılabilir) — ve zamanla hareket eden her şey, bir
+  motordan güneş sistemine, Stüdyo'da oynar.
+- **3D baskıda çok daha fazlası:**
+  - birlikte sığmayan parçalar birden çok tablaya, her biri ayrı dosya
+    olarak dağıtılır (tarayıcıda .zip);
+  - hiçbir tablaya sığmayan parça hizalama pimli parçalara kesilir;
+  - baskı kontrolü ince duvarları, küçük delikleri, dar boşlukları ve
+    havaya basılan yüzeyleri adlandırır ve modelde gösterir;
+  - destek ve brim dosyada yalnızca gereken parçalar için açılır;
+  - bir **montaj kitapçığı** hangi parçanın nereye gittiğini gösterir;
+  - birlikte mi yan yana mı, modelin kendisine bakılarak önerilir;
+  - basmak yerine satın aldığınız parçaları dışarıda bırakın; tek
+    filamentli yazıcılar için her tablaya tek renk; filament ve süre
+    tahminleri.
+- Baskı kontrolünün bulgularında **AI ile düzelt**.
+- AI asistanları: yeni *görünüş ayarla*, *fotoğraf çek* ve *video kaydet*
+  araçları; *baskıya hazırla* artık baskı ayarlarınızı alır.
+
+### Değişti
+
+- Uygulama içi AI artık Stüdyo'nun malzemelerini, hareketini ve 3D baskıyı;
+  istek baskıyla ilgiliyse yazıcınızı ve nozulunuzu biliyor.
+- **Kendi AI'ını kullan** artık iki basit adım: isteği kopyalayın, cevabı
+  geri yapıştırıp oluşturun. İstem kutusuna yapıştırılan kod çalışır; mevcut
+  bir model de aynı yolla değiştirilebilir.
+- Büyük modeller baskı tablasına çok daha hızlı yerleşir ve 3D baskı bölümü
+  hâlâ neyin üzerinde çalıştığını gösterir.
+- Destek adresi: support@argildesign.com.
+
+### Düzeltildi
+
+- Mac'te yüksek kaliteli render'larda vernikli malzemeler ve cam siyah
+  çıkıyordu.
+- 3D baskı bölümü büyük bir modelde uzun süre "Yerleştiriliyor…" ekranında
+  kalabiliyordu.
+
 ## [1.0.9] - 2026-10-15
 
 Modelinizi slicer'ınıza gönderin, AI ile sohbetinizi görün ve hesabınız

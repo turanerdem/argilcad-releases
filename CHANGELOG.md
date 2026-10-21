@@ -11,6 +11,61 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.10] - 2026-10-22
+
+Real materials, a measuring tool, and a 3D print hand-off that splits,
+checks and explains your print.
+
+### Added
+
+- **Material library.** 48 materials in the Studio — metals, plastics and
+  filaments, wood, glass, rubber and more — each with its own colour palette
+  (filament colours, RAL, anodised, wood species) and real surface patterns.
+  Search, recent materials, previews drawn under your current lighting, and
+  fine adjustments.
+- **Measure.** One smart tool, in the workspace and in the Studio: point at
+  an edge, circle, face or corner to read it, pick two to get the distance,
+  gap, centre-to-centre or angle between them, and pin the dimension where
+  you want it. Pinned dimensions follow their parts as they move, and can be
+  shown in photos and videos.
+- **Colours, materials, joints and animation from the code.** A model can
+  carry its own look and motion — the AI now adds them on its own when they
+  fit (switch it off in Settings) — and anything that moves over time, from
+  an engine to a solar system, plays in the Studio.
+- **3D print, much further:**
+  - parts that do not fit together go onto several plates, one file each
+    (a .zip in the browser);
+  - a part too big for any plate is cut into pieces with alignment pins;
+  - a print check names thin walls, small holes, tight clearances and
+    faces printed over air, and shows them on the model;
+  - supports and a brim are switched on in the file only for the parts that
+    need them;
+  - an **assembly booklet** shows which piece goes where;
+  - together or side by side is suggested from the model itself;
+  - leave out the parts you buy rather than print; one colour per plate for
+    single-filament printers; filament and time estimates.
+- **Fix with AI** on the print check's findings.
+- AI assistants: new *set appearance*, *render photo* and *record video*
+  tools, and *prepare print* takes your print settings.
+
+### Changed
+
+- The in-app AI now knows the Studio's materials, motion and 3D print, and
+  your printer and nozzle when a request is about printing.
+- **Use your own AI** is now two simple steps: copy the request, paste the
+  answer back and build it. Code pasted into the prompt box runs, and an
+  existing model can be changed the same way.
+- Large models lay out on the print plate much faster, and the 3D print
+  section shows what it is still working on.
+- Support address: support@argildesign.com.
+
+### Fixed
+
+- Clear-coated materials and glass rendered black in high-quality renders on
+  Mac.
+- The 3D print section could stay on "Laying it out…" for a long time on a
+  large model.
+
 ## [1.0.9] - 2026-10-15
 
 Send your model to your slicer, see your conversation with the AI, and keep
