@@ -11,6 +11,57 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.11] - 2026-11-01
+
+Technical drawings, models from photos, and a Studio camera that knows
+where to look.
+
+### Added
+
+- **Technical drawings.** The toolbar's Drawing button opens a full drawing
+  editor in five styles — Classic (ISO), Blueprint, Whiteprint, CAD night and
+  Pencil on vellum. Sheets, views (sections and exploded views included),
+  automatic dimensions that follow the model when it changes, holes called
+  out with their counterbore, countersink or depth, a title block and a bill
+  of materials. ISO by default, ASME in the US. Export to PDF, SVG and DXF.
+  Drawing is free; an **AI check** of the dimensions comes with Starter and
+  Pro.
+- **Models from photos** (Starter and Pro). Photograph your tools on a sheet
+  of A4 or Letter paper, or beside a bank card, and get a Gridfinity bin or a
+  drawer insert with a pocket for each one. Or photograph a broken part, add
+  a few caliper values, and get a parametric copy. The photo is measured on
+  your device; dimensions nobody gave are asked for, with an estimate, and
+  standard parts come from a sourced catalogue.
+- **Delete my account** in Profile, with a clear list of what goes and what
+  stays.
+- **The Studio film's camera** can be planned from the code: say what each
+  moment should show, and the camera frames it for 16:9, 1:1 and 9:16 alike.
+- **Camera while playing** in Motion: frame the whole motion, follow a part,
+  hold still, or play the film's camera — and orbit or zoom while it plays.
+- Close the side panel per mode (⌘B, or drag the splitter) for more room.
+- The modelling card can be dragged anywhere and pinned.
+- AI assistants: photo tools (*list*, *get*, *add*, *measure photo*,
+  *make shadow board*), *lookup standard*, *preview film*, and *open print
+  section* / *get print status* for handing a model to your slicer.
+
+### Changed
+
+- New icons across the toolbar, the modelling tools and the mode switch.
+- Tool hints show briefly while a tool is new to the project; ⓘ brings them
+  back.
+- Drawing and export give a clear notice when there is no model yet.
+- Web: tablets can turn on full modelling (experimental, Settings › Full
+  mode), and pens and fingers work in the viewer — palm rejection, no stray
+  orbit from a pen tip.
+- The toolbar scrolls sideways when the window is narrow.
+
+### Fixed
+
+- Animation play and stop.
+- Draft changes being lost.
+- 3D print fixes with AI.
+- The example previewer.
+
 ## [1.0.10] - 2026-10-22
 
 Real materials, a measuring tool, and a 3D print hand-off that splits,

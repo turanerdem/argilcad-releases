@@ -12,6 +12,57 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.11] - 2026-11-01
+
+Teknik resimler, fotoğraftan modeller ve nereye bakacağını bilen bir
+Stüdyo kamerası.
+
+### Eklendi
+
+- **Teknik resim.** Araç çubuğundaki Teknik Resim düğmesi beş stilde tam bir
+  çizim düzenleyicisi açar — Klasik (ISO), Blueprint, Whiteprint, CAD gece ve
+  Aydınger üzerine kurşun kalem. Paftalar, görünüşler (kesit ve patlatılmış
+  görünüşler dahil), model değiştikçe onu izleyen otomatik ölçüler; havşa,
+  yuva ve derinliğiyle belirtilen delikler, antet ve parça listesi.
+  Varsayılan ISO, ABD'de ASME. PDF, SVG ve DXF olarak dışa aktarım. Çizim
+  ücretsizdir; ölçülerin **AI kontrolü** Starter ve Pro ile gelir.
+- **Fotoğraftan modeller** (Starter ve Pro). Aletlerinizi bir A4 ya da Letter
+  kâğıdın üzerinde veya bir banka kartının yanında fotoğraflayın; her biri
+  için cebi olan bir Gridfinity kutusu ya da çekmece içliği alın. Ya da kırık
+  bir parçayı fotoğraflayıp birkaç kumpas ölçüsü ekleyin, parametrik bir
+  kopyasını alın. Fotoğraf cihazınızda ölçülür; verilmemiş kritik ölçüler bir
+  tahminle birlikte sorulur, standart parçalar kaynağı belli bir katalogdan
+  gelir.
+- Profil'de **Hesabımı sil**: neyin silinip neyin kaldığı açıkça yazılı.
+- **Stüdyo filminin kamerası** koddan planlanabilir: her anın neyi
+  göstereceğini söyleyin, kamera 16:9, 1:1 ve 9:16 için aynı doğrulukla
+  kadrajlar.
+- Hareket bölümünde **Oynatırken kamera**: tüm hareketi kadrajla, bir parçayı
+  izle, sabit dur ya da filmin kamerasını oynat — oynarken döndürüp
+  yakınlaştırabilirsiniz.
+- Yan panel her mod için kapatılabilir (⌘B ya da ayırıcıyı sürükleyin).
+- Modelleme kartı istenen yere sürüklenip sabitlenebilir.
+- AI asistanları: fotoğraf araçları (*list*, *get*, *add*, *measure photo*,
+  *make shadow board*), *lookup standard*, *preview film*, modeli
+  dilimleyiciye vermek için *open print section* / *get print status*.
+
+### Değişti
+
+- Araç çubuğunda, modelleme araçlarında ve mod geçişinde yeni simgeler.
+- Araç ipuçları, araç projede yeniyken kısa süre görünür; ⓘ geri getirir.
+- Henüz model yokken teknik resim ve dışa aktarım açık bir uyarı verir.
+- Web: tabletlerde tam modelleme açılabilir (deneysel, Ayarlar › Tam mod);
+  görüntüleyicide kalem ve parmak çalışır — avuç içi reddi var, kalem ucu
+  kamerayı istemeden döndürmez.
+- Pencere darken araç çubuğu yana kaydırılabilir.
+
+### Düzeltildi
+
+- Animasyon oynatma ve durdurma.
+- Taslak değişikliklerinin kaybolması.
+- AI ile 3D baskı düzeltmeleri.
+- Örnek önizleyici.
+
 ## [1.0.10] - 2026-10-22
 
 Gerçek malzemeler, ölçüm aracı ve baskınızı bölen, kontrol eden ve
