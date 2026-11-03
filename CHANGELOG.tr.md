@@ -12,6 +12,48 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.12] - 2026-11-03
+
+Yeni bir yan panel, modelin yapım adımları ve elle yerleştirdiğiniz bir
+alet kutusu düzenleyicisi.
+
+### Eklendi
+
+- **Yapım adımları.** Yan panel modelin nasıl kurulduğunu adım adım
+  gösterir — kodun kendi aşamaları ve aralarındaki modelleme araçları. Bir
+  adıma dokunup kodunu açın ya da modelin üzerinde çizdirip neyi ekleyip
+  neyi çıkardığını görün. Zaman çizelgesi her sürümün hangi adımları
+  değiştirdiğini söyler.
+- **Alet kutusunu elle yerleştirin.** Cepleri sürükleyin, döndürün, parmak
+  oyuklarını kaydırın; kontrol siz ilerledikçe çalışır. Birden çok
+  fotoğraftan alet alın, bir aleti birden fazla kez ekleyin, ters yüzüyle
+  yerleştirin, tepsileri katlar hâlinde üst üste koyun. Yerleşim kodda
+  saklanır; yeniden açtığınızda bıraktığınız gibi görünür.
+- **Yazıcınızdan büyük kutu ve tepsiler** parçalar hâlinde basılır —
+  Gridfinity kutusu ızgara çizgileri boyunca. Yazıcınızı bir kez seçin;
+  düzenleyici nereden kesileceğini gösterir.
+- **İstiflenebilir tepsiler**, kenar ve parmak oyuklarıyla.
+- Bir tasarımın fotoğrafları, üretildikten sonra da istem kutusunda kalır;
+  ölçümlerine bir dokunuş uzaklıkta.
+- AI asistanları: *show build step* bir adımı modelinizin üzerinde çizer.
+
+### Değişti
+
+- **Yeni yan panel**: bir seferde bir bölmenin açık olduğu bir ray, altına
+  isteğe bağlı sabitlenen ikinci bir bölme ve bakılması gerekenler için
+  rozetler. Kod bölmesinin iki yüzü var, Parametreler ve Kod; çalıştırma
+  konsolu ikisinin altında bir çekmece. Telefonlarda bölmeler modelin
+  üzerinde bir sayfa olarak açılır.
+- Daha hızlı üretim.
+- Fotoğraflar için daha anlaşılır ölçüm ekranı ve fotoğraftan baskıya hazır
+  modele daha akıcı bir yol.
+
+### Düzeltildi
+
+- Kod düzenleyicinin yatay kaydırma çubuğu.
+- Web uygulamasında fotoğraf yükleme.
+- Web uygulaması daha seyrek yeniden indirilir.
+
 ## [1.0.11] - 2026-11-01
 
 Teknik resimler, fotoğraftan modeller ve nereye bakacağını bilen bir

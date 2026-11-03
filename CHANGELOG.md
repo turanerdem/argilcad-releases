@@ -11,6 +11,46 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.12] - 2026-11-03
+
+A new side panel, the model's construction steps, and a tool-bin editor
+you lay out by hand.
+
+### Added
+
+- **Build steps.** The side panel lists how the model is built, step by
+  step — the code's own stages and the modelling tools between them. Tap a
+  step to open its code, or draw it on the model to see what it adds and
+  removes. The Timeline says which steps each version changed.
+- **Lay out a tool bin by hand.** Drag pockets, turn them, move their finger
+  scoops; the check runs as you go. Take tools from several photos, add a
+  tool more than once, lay it the other side up, and stack trays in layers.
+  Your layout is kept in the code, so opening it again shows it as you left
+  it.
+- **Bins and trays bigger than your printer** are printed in pieces — a
+  Gridfinity bin along its grid lines. Pick your printer once; the editor
+  shows where it will be cut.
+- **Stacking trays**, with a rim and finger scallops.
+- A design's photos stay in the prompt box after it is generated, one tap
+  from their measurements.
+- AI assistants: *show build step* draws a step on your model.
+
+### Changed
+
+- **New side panel**: a rail of panes with one open at a time, an optional
+  second one pinned under it, and badges for what needs a look. The code
+  pane has two faces, Parameters and Code, with the run console as a drawer
+  under both. On phones the panes open as a sheet over the model.
+- Faster generation.
+- Clearer measurement screen for photos, and a smoother path from a photo
+  to a print-ready model.
+
+### Fixed
+
+- The code editor's horizontal scroll bar.
+- Uploading photos in the web app.
+- The web app is downloaded again less often.
+
 ## [1.0.11] - 2026-11-01
 
 Technical drawings, models from photos, and a Studio camera that knows
