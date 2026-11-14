@@ -12,6 +12,45 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.13] - 2026-11-15
+
+İlk andan hazır bir proje, cetvelde çevrilen ölçüler ve elle dizilen baskı
+tablası. Bu güncelleme zorunludur.
+
+### Eklendi
+
+- **Hemen başlayın.** Yeni bir proje, değiştirmeye hazır bir Gridfinity
+  kutusuyla açılır; komut kutusu örnekleri bir dokunuş uzakta sunar.
+- **Ölçüyü çevirin, modeli görün.** Her örnek ve üretilen her model,
+  ölçüleri parametre olarak açılır. Onları bir cetvelde çevirin (açı için
+  bir kadran, seçenek için bir anahtar); bıraktığınızda model yeniden
+  oluşur. Yavaşladığınızda cetvel daha ince adımlara geçer.
+- **Baskı tablasını elle dizin.** Bir parçayı sürükleyin, çevirin, başka
+  bir tablaya taşıyın, kopyasını ekleyin, tablayı kilitleyin, geri alın.
+  Parçanın hangi yüzü üstüne yatacağını, gerçekten oturabileceği yüzler
+  arasından seçin.
+- **Baskı için parçayı elle kesin**: her yerden ve her açıyla; parçaları
+  pim, kırlangıç kuyruğu, M3 vida, geçmeli pim ya da yapıştırıcıyla
+  birleştirin.
+- **Parça parça dışa aktarın.** Dışa Aktar menüsü, her biçimin çok parçalı
+  bir modelle ne yaptığını söyler; her parçayı ayrı bir dosya olarak (tek
+  bir zip) ya da yalnızca seçtiğiniz parçayı kaydedebilir.
+- Yapay zekâ asistanları: bağlı oturumları Ayarlar'da görün, birini
+  duraklatın ya da yerini başka bir yapay zekâ istemcisine bırakın.
+
+### Değişti
+
+- Güvenlik ve kararlılık iyileştirmeleri.
+- Yapay zekâ asistanları: bu sürüm argilcad-mcp 0.1.6 ile çalışır. `npx`
+  onu kendisi alır; Claude Desktop kullananlar uzantıyı yeniden indirsin.
+- Kullanım verisi sorusu artık uygulamanın altında bir şerit; siz yanıt
+  verene kadar hiçbir şey gönderilmez.
+- Hesap hizmetlerine ulaşılamadığında da uygulama açılır ve bunu söyler.
+
+### Düzeltildi
+
+- Parametre panelinde sayılar ve birimler alanlarına sığıyor.
+
 ## [1.0.12] - 2026-11-03
 
 Yeni bir yan panel, modelin yapım adımları ve elle yerleştirdiğiniz bir

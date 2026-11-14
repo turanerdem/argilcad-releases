@@ -11,6 +11,43 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.13] - 2026-11-15
+
+A project ready from the first moment, numbers you turn on a ruler, and a
+print plate you arrange by hand. This update is required.
+
+### Added
+
+- **Start right away.** A new project opens with a Gridfinity bin ready to
+  change, and the prompt box offers the examples, one tap from being built.
+- **Turn a number, see the model.** Every example, and every generated
+  model, opens with its sizes as parameters. Turn them on a ruler (or a
+  dial for an angle, a switch for an option); the model builds again as
+  you let go. Slow down and the ruler takes finer steps.
+- **Arrange the print plate by hand.** Drag a part, turn it, move it to
+  another plate, add copies, lock a plate, undo. Pick the face a part lies
+  on from the faces it can really rest on.
+- **Cut a part by hand for printing**, anywhere and at any angle, and join
+  the pieces with pins, a dovetail, M3 screws, snap pins or glue.
+- **Export by the part.** The Export menu says what each format does with a
+  model of several parts, and can save every part as its own file (one zip)
+  or only the part you selected.
+- AI assistants: see the connected sessions in Settings, pause one, or free
+  its slot for another AI client.
+
+### Changed
+
+- Security and stability improvements.
+- AI assistants: this version works with argilcad-mcp 0.1.6. `npx` picks
+  it up by itself; Claude Desktop users download the extension again.
+- The usage-data question is a banner under the app; nothing is sent until
+  you answer it.
+- The app starts even when account services cannot be reached, and says so.
+
+### Fixed
+
+- Numbers and labels fit their fields in the parameter panel.
+
 ## [1.0.12] - 2026-11-03
 
 A new side panel, the model's construction steps, and a tool-bin editor
