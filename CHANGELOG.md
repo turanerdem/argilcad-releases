@@ -11,6 +11,51 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.14] - 2026-11-24
+
+Bring in your own models, keep track of your filament, and print straight
+to your printer. This update is required.
+
+### Added
+
+- **Import your own model.** Open a STEP, STL, 3MF or GLB file (File ›
+  Import…, or drop it on the viewer) and build onto it with the modelling
+  tools, as a part of its own or beside your model. The file stays on your
+  device.
+- **Make an imported model parametric** (Starter and Pro, experimental).
+  Its holes, fillets and chamfers become numbers you can change; a simple
+  part can be written as parametric code, or rebuilt by the AI and checked
+  against your file.
+- **My Workshop.** Your printers and your filament spools in one place, at
+  the top of the 3D print section.
+- **Filament inventory and print cost.** Keep your spools, see what each
+  print took and what it cost.
+- **Real filaments by name.** Pick a maker's line and colour from the
+  filament catalogue, in the spool dialog and in the Studio.
+- **Supports on the print plate.** See where supports will go before you
+  slice, and take them away or add them where you want.
+- **Print straight to your printer** (desktop, experimental; Creality K
+  series for now). Slice a plate and send it over your local network, then
+  follow the print from the top bar.
+- **Turn and move on the model.** Rotate shows rings and Move shows arrows
+  on the part itself; pick the part to move right on the model, move point
+  to point, or make a copy.
+
+### Changed
+
+- Security and stability improvements.
+- AI assistants: this version works with argilcad-mcp 0.1.7, which adds
+  tools for imported models. `npx` picks it up by itself; Claude Desktop
+  users download the extension again. Connectors older than 0.1.6 no longer
+  connect to the desktop app.
+- The code pane ends in one Apply button, and cutting a part for printing
+  is drawn on its own plate.
+
+### Fixed
+
+- Push/pull now works on rounded and curved faces.
+- Filament colours in the Materials section.
+
 ## [1.0.13] - 2026-11-15
 
 A project ready from the first moment, numbers you turn on a ruler, and a

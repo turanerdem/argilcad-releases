@@ -12,6 +12,51 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
+## [1.0.14] - 2026-11-24
+
+Kendi modellerinizi getirin, filamentinizi takip edin, doğrudan yazıcınıza
+basın. Bu güncelleme zorunludur.
+
+### Eklendi
+
+- **Kendi modelinizi içe aktarın.** Bir STEP, STL, 3MF veya GLB dosyası
+  açın (Dosya › İçe aktar… ya da görüntüleyiciye bırakın) ve modelleme
+  araçlarıyla üzerine kurun; kendi başına ya da modelinizin yanında bir
+  parça olarak. Dosya cihazınızda kalır.
+- **İçe aktarılan modeli parametrik yapın** (Starter ve Pro, deneysel).
+  Delikleri, yuvarlatmaları ve pahları değiştirebileceğiniz ölçülere
+  dönüşür; basit bir parça parametrik kod olarak yazılabilir ya da yapay
+  zekâ tarafından yeniden kurulup dosyanızla karşılaştırılır.
+- **Atölyem.** Yazıcılarınız ve filament makaralarınız tek yerde, 3D baskı
+  bölümünün en üstünde.
+- **Filament envanteri ve baskı maliyeti.** Makaralarınızı tutun, her
+  baskının ne kadar harcadığını ve neye mal olduğunu görün.
+- **Gerçek filamentler adıyla.** Bir üreticinin serisini ve rengini filament
+  kataloğundan seçin; makara penceresinde ve Stüdyo'da.
+- **Baskı tablasında destekler.** Dilimlemeden önce desteklerin nereye
+  geleceğini görün; istediğiniz yerden kaldırın ya da ekleyin.
+- **Doğrudan yazıcınıza basın** (masaüstü, deneysel; şimdilik Creality K
+  serisi). Bir tablayı dilimleyip yerel ağınız üzerinden gönderin, baskıyı
+  üst çubuktan izleyin.
+- **Model üzerinde döndürün ve taşıyın.** Döndür parçanın üzerinde halkalar,
+  Taşı oklar gösterir; taşınacak parçayı doğrudan modelde seçin, noktadan
+  noktaya taşıyın ya da bir kopya çıkarın.
+
+### Değişti
+
+- Güvenlik ve kararlılık iyileştirmeleri.
+- Yapay zekâ asistanları: bu sürüm, içe aktarılan modeller için araçlar
+  ekleyen argilcad-mcp 0.1.7 ile çalışır. `npx` onu kendiliğinden alır;
+  Claude Desktop kullananlar eklentiyi yeniden indirir. 0.1.6'dan eski
+  bağlayıcılar artık masaüstü uygulamasına bağlanmaz.
+- Kod paneli tek bir Uygula düğmesiyle biter; baskı için parça kesmek kendi
+  tablasında çizilir.
+
+### Düzeltildi
+
+- İt/çek artık yuvarlatılmış ve eğri yüzlerde çalışır.
+- Malzemeler bölümünde filament renkleri.
+
 ## [1.0.13] - 2026-11-15
 
 İlk andan hazır bir proje, cetvelde çevrilen ölçüler ve elle dizilen baskı
