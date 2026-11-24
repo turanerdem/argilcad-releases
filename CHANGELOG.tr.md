@@ -12,7 +12,7 @@ Biçim [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/) temel alınarak
 hazırlanmıştır ve bu proje [Anlamsal Sürümleme](https://semver.org/lang/tr/)
 kurallarına uyar.
 
-## [1.0.14] - 2026-11-24
+## [1.0.14] - 2026-11-25
 
 Kendi modellerinizi getirin, filamentinizi takip edin, doğrudan yazıcınıza
 basın. Bu güncelleme zorunludur.

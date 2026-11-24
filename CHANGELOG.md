@@ -11,7 +11,7 @@ All notable changes to ArgilCAD will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.14] - 2026-11-24
+## [1.0.14] - 2026-11-25
 
 Bring in your own models, keep track of your filament, and print straight
 to your printer. This update is required.
